@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+.about-page{
+  background-image: url('./img/background.jpg');
+  background-size: auto 100%;
+  object-fit: cover;
+}
+
+.header-color{
+  background-image: url('./img/header5.png');
+  background-size: 100%;
+}
+
+.owo2 h3{
+  text-align: center;
+  color:white;
+  text-shadow: 2px 2px black;
+}
+
+.lead{
+  text-justify: center;
+  font-family: 'Roboto';
+  font-size: 17px;
+  color:white;
+  padding: 3em;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
+}
+
+.owo1{
+  text-align: center;
+  color:white;
+  text-shadow: 1px 1px  black;
+}
+
+.owo3{
+  text-align: center;
+}
+
+.owo3 img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+
+.landing-grid {
+  background: -webkit-linear-gradient(-45deg,#EE7752,#e73c73,#23a6d5,#23d5ab);  
+  background: linear-gradient(-45deg,#EE7752,#e73c73,#23a6d5,#23d5ab); 
+  background-size: 400% 400%;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50% ;
+  }
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+}
+
+@media screen and (min-width: 500px){
+  .projects-grid{
+    flex-direction: row;
+  }
+}
+
+/* Resume Page css */
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+/* contact page css */
+.contact-body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #03080a;
+  font-family: 'Poppins',sans-serif;
+}
+
+.container{
+  width: 80%;
+  padding: 20px;
+}
+.container h3{
+  width: 100%;
+  color: #45f3ff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .row100{
+  position: relative;
+  width: 100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.container .row100 .col{
+  position: relative;
+  width: 100%;
+  padding: 0 10px ;
+  margin: 30px 0px 10px;
+  transition: 0.5s;
+}
+
+.container .row100 .inputBox{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #45f3ff;
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.container .row100 .inputBox .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.container .row100 .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.container .row100 .inputBox.textarea{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+.container .row100 .inputBox.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+.container .row100 .inputBox textarea:focus + .text,
+.container .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10
+}
+
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+input[type='submit']{
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #45f3ff;
+  color: black;
+  font-size: 18px;
+  border-radius: 2px;
+}
+
+/* contact page css */
+
+.avatar-img {
+  height: 250px;
+  padding: 5em;
+  border-radius: 250px;
+}
+
+#my-skills{
+  text-decoration: none;
+  background: linear-gradient(90deg,#FFF,#89fffd,#ef32d9);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0.1);
+}
+
+
+
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 2em 0 ;
+}
+
+.banner-text h1,h2 {
+  /*font-size: 66px;*/
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin:  auto;
+
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 2vh;
+}
+
+
+.project-button {
+  text-decoration: none;
+  color: black;
+}
+
